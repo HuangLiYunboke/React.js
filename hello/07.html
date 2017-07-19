@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.bootcss.com/react/15.6.1/react.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.6.1/react-dom.js"></script>
+    <script src="https://cdn.bootcss.com/babel-core/5.8.38/browser.js"></script>
+  </head>
+  <body>
+    <div id="example">
+       <script type="text/babel">
+               var CommentBox = React.createClass({
+                   render: function(){
+                       return (
+                           <div className="commentBox">
+                           Hello world ! update!!!.
+                           </div>
+                       );
+                   }
+               })
+               ReactDOM.render(<CommentBox />, document.getElementById('example'));
+       </script>
+   </div>
+  </body>
+</html>

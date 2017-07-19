@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src="https://cdn.bootcss.com/react/15.6.1/react.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.6.1/react-dom.js"></script>
+    <script src="https://cdn.bootcss.com/babel-core/5.8.35/browser.js"></script>
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <title>HTML5 - React</title>
+  </head>
+  <body>
+    <div id="c">
+      <script type="text/babel">
+      var Input = React.createClass({
+        getInitialState(){
+          return{inputtext:"",retext:""};
+        },
+        handlechange(event){
+          this.setState({inputtext:event.target.value});
+        },
+        rehandlechange(event){
+          this.setState({retext:event.target.value});
+        },
+        render(){
+          var inputtext = this.state.inputtext;
+          var retext = this.state.retext;
+          var display = ""
+          if(inputtext === retext && inputtext){
+            display = <i className="fa fa-check" aria-hidden="true"></i>;
+          }
+          return (
+            <div>
+              <h1>name:{inputtext}</h1>
+              <h1>age:{retext}</h1>
+              <input type="text" onChange={this.handlechange}/>
+              <br/>
+              <br/>
+              <input type="text" onChange={this.rehandlechange}/>
+              {display}
+            </div>
+          )
+        }
+      })
+
+
+      ReactDOM.render(
+        <Input />,document.getElementById("c")
+      )
+
+      </script>
+
+    </div>
+
+  </body>
+</html>

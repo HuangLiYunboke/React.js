@@ -1,0 +1,77 @@
+React的简述
+React起源于Facebook的内部项目,因为公司对市场上所有的javascript MVC框架,都不满意,就决定自己定一套
+用来架设Instagram的网站.做出来以后,发现这套东西很好用,就在2013年5月开源了
+
+有于react的设计思想极其独特,属于革命性的创兴,性能出众,代码逻辑简单,
+
+这个项目本身也越来越大,从早的UI引擎变成一整套前后端通吃的webapp解决方案,衍生的react native项目,希望
+用webapp的方式去写Native app.如果能够实现,整个互联网行业都被颠覆 .
+React的安装包
+https://facebook.github.io/react/docs/installation.html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.bootcss.com/react/15.6.1/react.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.6.1/react-dom.js"></script>
+    <script src="https://cdn.bootcss.com/babel-core/5.8.35/browser.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      ReactDOM.render(<h1>Hello world</h1>,document.getElementById("example"));
+    </script>
+
+  </body>
+</html>
+
+上面是一个简单的列子
+注意
+1.用React要引三个CDN或三个库
+react.js是react的核心库
+react-dom.js是提供与DOM相关的功能.
+browser.js的作用是将JSX语法转为javascript语法.
+2.在<script>标签的type="text/babel"而不是type="text/javascript",
+这是因为React独有的JSX语法,
+
+
+核心思想
+核心思想:分装组件,各个组件维护自己的状态和UI,当状态变更,自动重新渲染整个组件.
+基于这种方式的一个直观感受就是不再需要来回找DOM元素,然后操作DOM去更改UI.
+
+组件
+React 应用都是构建在组件之上.
+props是组件包含的两个核心之一, 另一个是state.可以把props看成组件的配置属性,在组件内部是不变的
+只是在调用这个组件的时候传入不同的属性来定制显示这个组件.
+
+
+JSX
+JSX是React一种特殊的语法,看起来想HTML和js混合在一起,是一种XML语法.
+
+
+Virtual DOM
+当组件state有更改时,React会自动调用组件的render()方法重新渲染组件的UI.
+当然如果真的这样大面积的操作DOM,性能是一个很大的问题,所以React实现了一个虚拟DOM,组件的DOM
+映射到这个虚拟DOM上,React在这给虚拟DOM上实现了一diff算法,当要更新组件时,会通过diff寻找到要变更的
+DOM节点上,所以实际上不是重新渲染整个DOM树.
+虚拟的DOM是一个纯粹的数据结构,性能必原生的DOM快很多.
+
+Data Flow 单项数据绑定时React推崇的一个应用架构的方式.当引用足够复杂时会体会到它的好处.
+
+
+ReactDOM.render()是React的方法.用于将模板转换为HTML语言,并插入指定的DOM节点
+方法接受两个参数,第一是插入什么,第二是插到那
+
+研究一下07.html代码
+getDefaultProps:function()对props初始化进行设定
+getInitialState:初始化一个状态
+this.setState修改状态的名称
+方强
+shadow ocket
+下蓝灯
+下个shadow socket
+为什么
+双击变颜色
+React实现原理
