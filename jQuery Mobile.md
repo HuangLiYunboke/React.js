@@ -20,3 +20,43 @@
   
 2. 从 jQuerymobile.com 下载 jQuery Mobile 库
 
+## jQuery Mobile 页面
+```
+<body>
+   <div data-role="page">
+
+      <div data-role="header">
+           <h1>欢迎访问我的主页</h1>
+      </div>
+
+      <div data-role="content">
+          <p>我是一名移动开发者！</p>
+      </div>
+
+      <div data-role="footer">
+          <h1>页脚文本</h1>
+      </div>
+
+   </div>
+</body>
+```
+
+1. data-role="page" 是显示在浏览器中的页面
+2. data-role="header" 创建页面上方的工具栏（常用于标题和搜索按钮）
+3. data-role="content" 定义页面的内容，比如文本、图像、表单和按钮，等等
+4. data-role="footer" 创建页面底部的工具栏
+
+### 在 jQuery Mobile 中创建按钮
+#### jQuery Mobile 中的按钮可通过三种方法创建：
+1. 使用 < button > 元素
+2. 使用 < input > 元素
+3. 使用 data-role="button" 的 <a> 元素
+
+**jQuery Mobile 中的按钮会自动获得样式，这增强了他们在移动设备上的交互性和可用性。**
+**data-role="button" 的 <a> 元素来创建页面之间的链接，而 <input> 或 <button> 元素用于表单提交。**
+  
+ ###  行内按钮
+默认情况下，按钮会占据屏幕的全部宽度。如果您需要按钮适应其内容，或者如果您需要两个或多个按钮并排显示，请添加 data-inline="true"
+  
+
+
