@@ -15,6 +15,7 @@
 
   
   [jQuery-Mobile的CDN](http://www.bootcdn.cn/jquery-mobile/)
+  
   [jQueryCDN](http://www.bootcdn.cn/jquery/)
   
 2. 从 jQuerymobile.com 下载 jQuery Mobile 库
