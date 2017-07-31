@@ -55,8 +55,26 @@
 **jQuery Mobile 中的按钮会自动获得样式，这增强了他们在移动设备上的交互性和可用性。**
 **data-role="button" 的 <a> 元素来创建页面之间的链接，而 <input> 或 <button> 元素用于表单提交。**
   
- ###  行内按钮
+ ### 行内按钮
 默认情况下，按钮会占据屏幕的全部宽度。如果您需要按钮适应其内容，或者如果您需要两个或多个按钮并排显示，请添加 data-inline="true"
+```
+<a href="#pagetwo" data-role="button" data-inline="true">转到页面二</a>
+```
+### 组合按钮
+jQuery Mobile 提供了对按钮进行组合的简单方法。
+请将 data-role="controlgroup" 属性与 data-type="horizontal|vertical" 一同使用，以规定水平或垂直地组合按钮
+```
+<div data-role="controlgroup" data-type="horizontal">
+  <a href="#anylink" data-role="button">按钮 1</a>
+  <a href="#anylink" data-role="button">按钮 2</a>
+  <a href="#anylink" data-role="button">按钮 3</a>
+</div>`
+```
+### 后退按钮
+```
+<button  data-rel="back">按钮</button>
+```
+
   
 
 
