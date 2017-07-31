@@ -74,6 +74,79 @@ jQuery Mobile 提供了对按钮进行组合的简单方法。
 ```
 <button  data-rel="back">按钮</button>
 ```
+### 更多用于按钮的 data-* 属性
+
+属性| 值 | 描述|
+-----|------|-----
+data-corners	| true | false| 规定按钮是否有圆角。
+data-mini| true | false| 规定是否是小型按钮。
+data-shadow|true | false|规定按钮是否有阴影
+
+```
+<a href="#" data-role="button" data-inline="true" data-corners="true" data-mini="true" data-shadow="true">按钮 1</a>
+<a href="#" data-role="button" data-inline="true" data-corners="false" data-mini="false" data-shadow="false">按钮 1</a>
+```
+### jQuery Mobile 按钮图标
+1. jQuery Mobile 提供的一套图标可令您的按钮更具吸引力
+2.如需在 jQuery Mobile 中向按钮添加图标，请使用 data-icon 属性：
+**您也可以在 <button> 或 <input> 元素中使用 data-icon 属性。**
+
+```
+<a href="#anylink" data-role="button" data-icon="refresh">Refresh Page</a>
+```
+
+属性| 值 | 描述|
+-----|------|-----
+data-icon="arrow-l"	| 左箭头| 
+data-icon="arrow-r" | 右箭头	|	
+data-icon="arrow-u"	|上箭头	|	
+data-icon="arrow-d" |	下箭头	|	
+data-icon="plus"	  |加		|
+data-icon="minus"	  |减		|
+data-icon="delete"	|删除		|
+data-icon="check"	  |检查		|
+data-icon="home"	  |首页		|
+data-icon="info"	  |信息		|
+data-icon="grid"    |网格		|
+data-icon="gear"	  |齿轮		|
+data-icon="search"	|搜索		|
+data-icon="back"	  |后退		|
+data-icon="forward"	|向前		|
+data-icon="refresh" |刷新		|
+data-icon="star"	  |星		|
+data-icon="alert"	  |提醒  |
+
+```
+	<a href="index.html" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="edit" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="minus" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="check" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+    <a href="index.html" data-role="button" data-icon="gear" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="forward" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="back" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="grid" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="star" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="alert" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="info" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="search" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+```
+
+
+
+
+
+
+
+
+
 
   
 
