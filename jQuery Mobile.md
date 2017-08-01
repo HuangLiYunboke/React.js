@@ -156,6 +156,7 @@ data-icon="alert"	  |提醒  |
 <a href="#link" data-role="button" data-icon="search" data-iconpos="notext">搜索</a>
 ```
 
+**页眉可包含一个或两个按钮，然而页脚没有限制。**
 
 
 
