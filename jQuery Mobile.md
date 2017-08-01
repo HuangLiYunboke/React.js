@@ -139,6 +139,24 @@ data-icon="alert"	  |提醒  |
 		<a href="index.html" data-role="button" data-icon="search" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
 ```
 
+### 定位图标
+1. 您也能够规定图标被放置的位置：上、右、下或左。
+2. 请使用 data-iconpos 属性来规定位置
+3. 默认地，所有按钮中的图标靠左放置。
+```
+<a href="#link" data-role="button" data-icon="search" data-iconpos="top">上</a>
+<a href="#link" data-role="button" data-icon="search" data-iconpos="right">右</a>
+<a href="#link" data-role="button" data-icon="search" data-iconpos="bottom">下</a>
+<a href="#link" data-role="button" data-icon="search" data-iconpos="left">左</a>
+
+```
+### 只显示图标
+1. 如果只需显示图标，请将 data-iconpos 设置为 "notext"
+```
+<a href="#link" data-role="button" data-icon="search" data-iconpos="notext">搜索</a>
+```
+
+
 
 
 
